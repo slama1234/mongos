@@ -23,12 +23,12 @@ const database = module.exports = () => {
 const Person = require("./models/Person")
 
 
-Person.insertMany([{name:"Amine" ,age : 28 , favoriteFoods : ["fricassé" ,"mtabga" , "mlewi"]} ,
-                {name:"Mary" , age : 24 ,favoriteFoods : ["rechta" , "broudou" , "chorba"]},
-                {name:"Mary" , age : 24 ,favoriteFoods : ["rechta" , "broudou" , "chorba","burritos"]},
-                   {name:"Bassem", age:23, favoriteFoods: ["lablebi" , "spaghetti", "fruit de mer"]} ,
-                    {name:"Omar" , age : 22 ,favoriteFoods : ["couscous" , "jelbena" , "me7chi"]} ,
-                    {name:"Lmok" , age : 24 ,favoriteFoods : ["rechta" , "broudou" , "chorba"]}])
+Person.insertMany([{name:"mouhamed" ,age : 28 , favoriteFoods : ["fricassé" ,"mtabga" , "mlewi"]} ,
+                {name:"manal" , age : 24 ,favoriteFoods : ["rechta" , "broudou" , "chorba"]},
+                {name:"anis" , age : 24 ,favoriteFoods : ["rechta" , "broudou" , "chorba","burritos"]},
+                   {name:"mustapha", age:23, favoriteFoods: ["lablebi" , "spaghetti", "fruit de mer"]} ,
+                    {name:"amira" , age : 22 ,favoriteFoods : ["couscous" , "jelbena" , "me7chi"]} ,
+                    {name:"amingit branch -M main" , age : 24 ,favoriteFoods : ["rechta" , "broudou" , "chorba"]}])
 
 const personList = async () =>  {
    const list =  await Person.find({})
